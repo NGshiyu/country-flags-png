@@ -8,11 +8,8 @@ var svg_directory = 'svg/'
 
 // Check arguments
 function get_output_directory() {
-    // Replace : with x, if two dimensions are specified
-    var dim = process.argv[2].split(':').filter(x => x.length > 0)
-    var dir = 'png' + (dim.length > 1 ? dim.join('x') : dim) + 'px'
-
-    return dir
+    // Always output to png folder
+    return 'png'
 }
 
 function get_output_dimensions() {
@@ -86,6 +83,8 @@ function get_all_svgs(callback) {
 }
 
 function convert_and_compress_svg(path_to_svg) {
+    var filename = path_to_svg.split('/').pop()
+    var uppercase_filename = filename.substring(0, filename.length - 4).toUpperCase() + '.png'
     var path_to_tmp_png = path_to_svg.substring(0, path_to_svg.length - 4) + '.png'
 
     var svgexport_command = "svgexport " + path_to_svg + " " + path_to_tmp_png + " pad " + get_output_dimensions()
@@ -105,6 +104,10 @@ function convert_and_compress_svg(path_to_svg) {
             process.exit(1)
         }
     })
+
+    // Rename to uppercase
+    var final_path = get_output_directory() + '/' + uppercase_filename
+    fs.renameSync(get_output_directory() + '/' + path_to_tmp_png.split('/').pop(), final_path)
 
     // Always remove temp file
     fs.unlink(path_to_tmp_png, (error) => {

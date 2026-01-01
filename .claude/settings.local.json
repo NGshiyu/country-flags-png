@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(cat:*)",
+      "Bash(chmod:*)",
+      "Bash(/Users/yangyangsheep/Code Space/⭐shiyu/country-flags-png/scripts/convert-to-png.sh)"
+    ]
+  }
+}
