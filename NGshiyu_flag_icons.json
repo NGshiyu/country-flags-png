@@ -2041,6 +2041,10 @@
     {
       "name": "ZW",
       "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/png\/ZW.png"
+    },
+	{
+      "name": "LOW_RANGE",
+      "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/scene\/png\/low_range.png"
     }
   ]
 }
