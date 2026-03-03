@@ -2045,6 +2045,19 @@
 	{
       "name": "LOW_RANGE",
       "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/scene\/png\/low_range.png"
+    },
+	{
+      "name": "ETFLIX-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/emby\/ETFLIX-emby.gif"
+    },
+	{
+      "name": "KL-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/emby\/KL-emby.jpg"
+    },
+	{
+      "name": "xyz-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/NGshiyu\/country-flags-png\/main\/emby\/xyz-emby.jpg"
     }
+
   ]
 }
